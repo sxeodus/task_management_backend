@@ -26,7 +26,7 @@ const io = socketIo(server, {
 app.use(helmet());
 app.use(morgan('combined'));
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://seguntaskmanager.netlify.app',
   credentials: true
 }));
 app.use(express.json());
