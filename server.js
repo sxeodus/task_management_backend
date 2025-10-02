@@ -17,7 +17,7 @@ const server = http.createServer(app);
 // Socket.IO setup
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173", // Your React app URL
+    origin: "https://seguntaskmanager.netlify.app", // Your React app URL
     methods: ["GET", "POST"]
   }
 });
