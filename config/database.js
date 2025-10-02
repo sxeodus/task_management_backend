@@ -6,7 +6,7 @@ const sequelize = new Sequelize({
   database: process.env.DB_NAME || 'task_management_db',
   username: process.env.DB_USER || 'postgres',
   password: process.env.DB_PASSWORD,
-  dialect: 'postgresql',
+  dialect: 'postgres',
   logging: process.env.NODE_ENV === 'development' ? console.log : false,
   pool: {
     max: 5,
